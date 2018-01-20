@@ -25,7 +25,7 @@ from sklearn.preprocessing import MinMaxScaler
 import seaborn as sns
 import pandas as pd
 import tushare as ts
-from quantist4.utils import plotter
+from utils import plotter
 """
 Description:
 """

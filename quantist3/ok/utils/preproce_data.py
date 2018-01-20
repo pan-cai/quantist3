@@ -104,7 +104,7 @@ class PreproceData():
             data = data.set_index('date')
             return data
 
-    def foredata_to_day_form(data):
+    def foredata_to_day_form(self, data):
         """
         Forex data to day form
         :return:
@@ -113,9 +113,10 @@ class PreproceData():
             print("Data is None")
             return None
         else:
-            data.reset_index(inplace=True)
-            data['date'] = pd.to_datetime(data['date'])
-            data = data.set_index('date')
+            #data.reset_index(inplace=True)
+            print(str(data['fdated']).strftime("%Y-%m-%d"))
+            data['fdated'] = pd.to_datetime(data['fdated'])
+            data = data.set_index('fdated')
             return data
 
 

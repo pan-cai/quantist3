@@ -27,7 +27,7 @@ Description:
 
 import tushare as ts
 import pandas as pd
-from utils import change_data_form as cdf
+from utils import change_data_form as
 
 class GetDataFromTushare(object):
     """

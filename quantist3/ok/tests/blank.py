@@ -5,4 +5,3 @@ x = [x for x in range(10)]
 
 plt.plot(x)
 plt.show()
-print('hello,,,')

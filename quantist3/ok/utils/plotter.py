@@ -23,7 +23,8 @@ Author: liupan
 """
 Description:
 """
-from quantist4.data.get_and_save_data import GetDataFromTushare as gdft
+from utils.get_and_save_data import GetDataFromTushare as gdft
+
 # from quantist4.utils import change_data_form as cdf
 from utils import preproce_data
 import matplotlib.pyplot as plt
@@ -59,7 +60,7 @@ class Plotter(object):
         # Formed the data
 
 
-        data = preproce_data.
+        data = preproce_data.PreproceData().foredata_to_day_form()
         data[parameter].plot(label=code)
         plt.legend(loc='best')
         plt.title(code)
